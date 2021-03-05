@@ -8,9 +8,7 @@ const List = () => {
   return (
     <div>
       <div>
-        <div>div 1 (these will be components later)</div>
-        <div>div 2</div>
-        <div>div 3</div>
+        <div>Table 1</div>
         <div onClick={navToDash}>Back to dash</div>
       </div>
     </div>
