@@ -9,6 +9,9 @@ import {
 import Nav from "../Nav/Nav";
 import Dash from "../Dash/Dash";
 import List from "../List/List";
+import Side from "../Side/Side";
+
+import "antd/dist/antd.css";
 
 class App extends Component {
   componentDidMount() {
@@ -19,8 +22,9 @@ class App extends Component {
     return (
       <Router>
         <div>
-          {/* Nav always visible */}
+          {/* Nav & side always visible */}
           <Nav />
+          <Side />
           {/* components inside switch render via path */}
           <Switch>
             <Redirect exact from="/" to="/home" />

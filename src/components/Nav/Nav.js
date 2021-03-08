@@ -6,8 +6,8 @@ const Nav = () => {
   };
 
   return (
-    <div>
-      <div>this is nav</div>
+    <div className="Nav">
+      <div>Thingbits</div>
       <div onClick={navToHome}>logo here (click test)</div>
     </div>
   );

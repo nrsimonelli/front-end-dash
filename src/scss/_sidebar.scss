@@ -1,0 +1,23 @@
+.Side-root {
+  @include test($green);
+  @include flexroot(column, flex-start);
+  height: calc(100vh - 85px);
+  width: 200px;
+  text-align: left;
+  align-items: flex-start;
+}
+.Side-title {
+  @include side-margin($margin-primary);
+  margin-top: $margin-primary;
+}
+.Side-cont {
+  @include side-margin($margin-secondary);
+  margin-top: $margin-primary;
+  width: calc(100% - 36px);
+  border-radius: 8px;
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+.Side-item {
+  @include side-margin($margin-secondary);
+}

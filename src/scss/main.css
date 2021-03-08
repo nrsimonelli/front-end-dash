@@ -1,0 +1,73 @@
+.Nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border: 1px solid #ffec3d;
+  height: 85px;
+}
+
+.Nav div {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.Side-root {
+  border: 1px solid #52c41a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: calc(100vh - 85px);
+  width: 200px;
+  text-align: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.Side-title {
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 24px;
+}
+
+.Side-cont {
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 24px;
+  width: calc(100% - 36px);
+  border-radius: 8px;
+  -webkit-box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+.Side-item {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+body {
+  font-size: 1rem;
+}
+/*# sourceMappingURL=main.css.map */
