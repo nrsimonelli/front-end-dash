@@ -1,6 +1,5 @@
 .Dash-root {
   @include flexroot(column, flex-start);
-
   width: calc(100% - 200px);
 }
 .Dash-cont {

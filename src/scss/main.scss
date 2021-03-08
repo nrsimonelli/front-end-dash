@@ -5,13 +5,17 @@
 @import "./table";
 @import "./sidebar";
 
+#root {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 .Main-root {
   font-size: 1rem;
-  @include test($red);
   width: 100vw;
+  max-width: 1440px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   flex-wrap: wrap;
   height: 100%;
 }
