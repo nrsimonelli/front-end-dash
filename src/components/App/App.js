@@ -10,7 +10,8 @@ import Nav from "../Nav/Nav";
 import Dash from "../Dash/Dash";
 import List from "../List/List";
 import Side from "../Side/Side";
-import Radio from "../Radio/Radio";
+import Log from "../Log/Log";
+import Packets from "../Packets/Packets";
 
 import "antd/dist/antd.css";
 
@@ -31,7 +32,8 @@ class App extends Component {
             <Redirect exact from="/" to="/home" />
             <Route exact path="/home" component={Dash} />
             <Route exact path="/list" component={List} />
-            <Route exact path="/radio" component={Radio} />
+            <Route exact path="/Log" component={Log} />
+            <Route exact path="/packets" component={Packets} />
             <Route render={() => <h1>404</h1>} />
           </Switch>
         </div>

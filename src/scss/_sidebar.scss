@@ -18,4 +18,5 @@
 }
 .Side-item {
   @include side-margin($margin-secondary);
+  cursor: pointer;
 }

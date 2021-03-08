@@ -1,2 +1,11 @@
 .Table-root {
+  @include flexroot(column, flex-start);
+  width: calc(100% - 200px);
+}
+
+.Table {
+  @include shadow;
+  margin-top: $margin-primary;
+  width: calc(100% - 48px);
+  min-width: 470px;
 }
