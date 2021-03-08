@@ -1,17 +1,15 @@
 import React from "react";
+import { Card } from "antd";
 
 const Dash = () => {
-  const navToList = () => {
-    console.log("list was clicked");
-  };
-
   return (
-    <div>
-      <div>
-        <div>div 1 (these will be components later)</div>
-        <div onClick={navToList}>div 2 (go to list example)</div>
-        <div>div 3</div>
-        <div>div 4</div>
+    <div className="Dash-root">
+      <div className="Dash-title">Dashboard</div>
+      <div className="Dash-cont">
+        <Card className="Card pos-1">data</Card>
+        <Card className="Card pos-2">data</Card>
+        <Card className="Card pos-3">data</Card>
+        <Card className="Card pos-4">data</Card>
       </div>
     </div>
   );

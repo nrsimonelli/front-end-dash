@@ -1,0 +1,37 @@
+.Dash-root {
+  @include flexroot(column, flex-start);
+
+  width: calc(100% - 200px);
+}
+.Dash-cont {
+  @include flexroot(row, flex-start);
+  width: 660px;
+  align-self: flex-start;
+}
+.Dash-title {
+  @include side-margin($margin-primary);
+  margin-top: $margin-primary;
+
+  align-self: flex-start;
+}
+.Card {
+  width: 300px;
+  height: 300px * 0.75;
+  @include shadow;
+}
+.pos-1 {
+  margin-top: $margin-primary;
+  margin-left: $margin-primary;
+  margin-right: $margin-secondary;
+}
+.pos-2 {
+  margin-top: $margin-primary;
+}
+.pos-3 {
+  margin-top: $margin-secondary;
+  margin-left: $margin-primary;
+  margin-right: $margin-secondary;
+}
+.pos-4 {
+  margin-top: $margin-secondary;
+}

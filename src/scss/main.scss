@@ -1,9 +1,17 @@
 @import "./variables";
 @import "./mixins";
 @import "./nav";
+@import "./dash";
 @import "./table";
 @import "./sidebar";
 
-body {
+.Main-root {
   font-size: 1rem;
+  @include test($red);
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
 }

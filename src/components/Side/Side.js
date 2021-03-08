@@ -18,7 +18,7 @@ const Side = () => {
 
   return (
     <div className="Side-root">
-      <div className="Side-title">Title</div>
+      <div className="Side-title">IOTStack</div>
 
       <List
         className="Side-cont"
