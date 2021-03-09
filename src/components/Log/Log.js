@@ -1,26 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Table } from "antd";
+import axios from "axios";
 
 const columnData = [
   {
     title: "Time",
-    dataIndex: "name",
+    dataIndex: "date_created",
   },
   {
     title: "Signal",
-    dataIndex: "signal",
+    dataIndex: "rssi",
   },
   {
     title: "Battery",
-    dataIndex: "battery",
+    dataIndex: "bat",
   },
   {
     title: "Type",
-    dataIndex: "type",
+    dataIndex: "payload",
   },
   {
     title: "ID",
-    dataIndex: "id",
+    dataIndex: "uid",
   },
   {
     title: "Name",
@@ -28,16 +29,32 @@ const columnData = [
   },
   {
     title: "Data",
-    dataIndex: "data",
+    dataIndex: "",
   },
 ];
-const tableData = [];
 
 const Log = () => {
+  const [logData, setLogData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios("http://localhost:5000/api/log");
+      console.log("query result", result.data);
+      setLogData(result.data);
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className="Table-root">
       <div className="Dash-title">Things</div>
-      <Table className="Table" columns={columnData} dataSource={tableData} />
+      <Table
+        className="Table"
+        size={"small"}
+        columns={columnData}
+        dataSource={logData}
+      />
     </div>
   );
 };
