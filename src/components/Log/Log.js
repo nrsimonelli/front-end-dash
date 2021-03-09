@@ -29,7 +29,7 @@ const columnData = [
   },
   {
     title: "Data",
-    dataIndex: "",
+    dataIndex: "key",
   },
 ];
 
